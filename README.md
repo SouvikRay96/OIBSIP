@@ -39,10 +39,11 @@ AccountsTable
 =========================================================================================
 
 And The other table is the Transaction Table which is unique for each bank account and the name of the Transaction Table is the TransactionID given in the accounts table.
-
-Each Transaction Table contains SerialNo., Date of Transaction, Description, Credit, Debit and Balance
-Here I have worked with 6 Accounts So 6 Transaction Tables should be maintained.
-Every Account has an account Creation Statement i.e. the accounts are created with a certain amount of balance and the date when it was Created.
+-----------------------------------------------------------------------------------------
+    Each Transaction Table contains SerialNo., Date of Transaction, Description, Credit, Debit and Balance
+    Here I have worked with 6 Accounts So 6 Transaction Tables should be maintained.
+    Every Account has an account Creation Statement i.e. the accounts are created with a certain amount of balance and the date when it was Created.
+-----------------------------------------------------------------------------------------
 Here they are as follows :->
 =========================================================================================
 For Account Number : 111
@@ -93,3 +94,7 @@ For Account Number : 666
     |        1 | 2005-06-03     | Account Creation |   3500 |     0 |    3500 |
     +----------+----------------+------------------+--------+-------+---------+
 =========================================================================================
+
+Number Guessing Game :->
+-----------------------------------------------------------------------------------------
+This is a Web-Based java Application where an user have to guess a number and the application will check whether the guessed number matches with the application generated random number or not. If the number guessed by the user is larger or smaller, the application will give hints about it. The user have to guess the number within 40 seconds. I have used Java Servlets to build this application and i have used TomCat Server to run this application. 
