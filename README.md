@@ -29,12 +29,12 @@ AccountsTable
     +-------+------------------+------------+------------+----------+
     | AccNo | AccHolderName    | BranchName | TransactID | PassWord |
     +-------+------------------+------------+------------+----------+
-    |   111 | Sonia Gupta      | Konnagar   | T111       |      111 |
-    |   222 | Indrajit Ghosh   | Uttarpara  | T222       |      222 |
-    |   333 | Souvik Ray       | Uttarpara  | T333       |      333 |
-    |   444 | Rajdeep Maullick | Hind Motor | T444       |      444 |
-    |   555 | Sourya Saha      | Jirat      | T555       |      555 |
-    |   666 | Steven Smith     | Kolkata    | T666       |      666 |
+    |   111 | AAA              | Konnagar   | T111       |      111 |
+    |   222 | BBB              | Uttarpara  | T222       |      222 |
+    |   333 | CCC              | Uttarpara  | T333       |      333 |
+    |   444 | DDD              | Hind Motor | T444       |      444 |
+    |   555 | EEE              | Jirat      | T555       |      555 |
+    |   666 | FFF              | Kolkata    | T666       |      666 |
     +-------+------------------+------------+------------+----------+
 =========================================================================================
 
@@ -94,6 +94,30 @@ For Account Number : 666
     |        1 | 2005-06-03     | Account Creation |   3500 |     0 |    3500 |
     +----------+----------------+------------------+--------+-------+---------+
 =========================================================================================
+
+The MySQL Commands/ queries are : 
+     drop database bank_database;
+     create database bank_database;
+     connect bank_database;
+     CREATE TABLE ACCOUNTSTABLE(ACCNO INT PRIMARY KEY, ACCHOLDERNAME VARCHAR(26), BRANCHNAME VARCHAR(26), TRANSANCTIONID VARCHAR(8), PASSWORD INT);
+     INSERT INTO ACCOUNTSTABLE VALUES(111,'AAA', 'KONNAGAR', 'T111', 111);
+     INSERT INTO ACCOUNTSTABLE VALUES(222,'BBB', 'UTTARPARA', 'T222', 222);
+     INSERT INTO ACCOUNTSTABLE VALUES(333,'CCC', 'UTTARPARA', 'T333', 333);
+     INSERT INTO ACCOUNTSTABLE VALUES(444,'DDD', 'HINDMOTOR', 'T444', 444);
+     INSERT INTO ACCOUNTSTABLE VALUES(555,'EEE', 'JIRAT', 'T555', 555);
+     INSERT INTO ACCOUNTSTABLE VALUES(666,'FFF', 'KOLKATA', 'T666', 666);
+     CREATE TABLE T111(SERIALNO INT PRIMARY KEY,DATEOFTRANSACT DATE,DESCRIPTION VARCHAR(30),CREDIT FLOAT,DEBIT FLOAT,BALANCE FLOAT);
+     INSERT INTO T111 VALUES(1,"2005-06-2","ACCOUNT CREATION",500,0,500);
+     CREATE TABLE T222(SERIALNO INT PRIMARY KEY,DATEOFTRANSACT DATE,DESCRIPTION VARCHAR(30),CREDIT FLOAT,DEBIT FLOAT,BALANCE FLOAT);
+     INSERT INTO T222 VALUES(1,"2006-08-12","ACCOUNT CREATION",3000,0,3000);
+     CREATE TABLE T333(SERIALNO INT PRIMARY KEY,DATEOFTRANSACT DATE,DESCRIPTION VARCHAR(30),CREDIT FLOAT,DEBIT FLOAT,BALANCE FLOAT);
+     INSERT INTO T333 VALUES(1,"2007-07-22","ACCOUNT CREATION",8000,0,8000);
+     CREATE TABLE T444(SERIALNO INT PRIMARY KEY,DATEOFTRANSACT DATE,DESCRIPTION VARCHAR(30),CREDIT FLOAT,DEBIT FLOAT,BALANCE FLOAT);
+     INSERT INTO T444 VALUES(1,"2008-03-17","ACCOUNT CREATION",9000,0,9000);
+     CREATE TABLE T555(SERIALNO INT PRIMARY KEY,DATEOFTRANSACT DATE,DESCRIPTION VARCHAR(30),CREDIT FLOAT,DEBIT FLOAT,BALANCE FLOAT);
+     INSERT INTO T555 VALUES(1,"2009-02-23","ACCOUNT CREATION",5000,0,5000);
+     CREATE TABLE T666(SERIALNO INT PRIMARY KEY,DATEOFTRANSACT DATE,DESCRIPTION VARCHAR(30),CREDIT FLOAT,DEBIT FLOAT,BALANCE FLOAT);
+     INSERT INTO T666 VALUES(1,"2007-10-28","ACCOUNT CREATION",4000,0,4000);
 
 Number Guessing Game :->
 -----------------------------------------------------------------------------------------
